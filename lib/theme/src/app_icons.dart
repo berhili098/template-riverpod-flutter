@@ -22,7 +22,7 @@ class AppIcons {
         path,
         width: size,
         height: size,
-        color: color,
+        colorFilter: color == null ? null : ColorFilter.mode(color, BlendMode.srcIn),
       );
     } else {
       return Image.asset(
